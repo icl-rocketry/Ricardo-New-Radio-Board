@@ -1,4 +1,11 @@
-22625019984338858
+22631846487977637
+AD7150BRMZ
+BEADC1608X95N
+
+
+0
+2
+2
 AD7150BRMZ
 IC_SKY65383-11
 
@@ -7,12 +14,33 @@ IC_SKY65383-11
 60
 60
 AD7150BRMZ
+LINX_CONREVSMA002-G
+
+
+0
+5
+5
+AD7150BRMZ
 SOP50P490X110-10N
 
 
 0
 10
 10
+AD7150BRMZ
+SOT95P280X145-5N
+
+
+0
+5
+5
+AD7150BRMZ
+XCVR_RFM95W-868S2
+
+
+0
+16
+16
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
