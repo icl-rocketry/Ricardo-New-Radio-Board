@@ -531,6 +531,9 @@
   (junction (at 204.47 76.962) (diameter 0) (color 0 0 0 0)
     (uuid b11ccf85-780b-4fa8-894e-4556016f908c)
   )
+  (junction (at 208.788 89.662) (diameter 0) (color 0 0 0 0)
+    (uuid b560aa91-6161-4f7a-a9ea-158b5469dd88)
+  )
   (junction (at 109.728 41.402) (diameter 0) (color 0 0 0 0)
     (uuid bc51f638-2d27-4c41-a71a-7f8094fb0178)
   )
@@ -597,6 +600,10 @@
     (stroke (width 0) (type default))
     (uuid 17ef4b1f-2735-4747-b50a-f34ca31961cf)
   )
+  (wire (pts (xy 208.788 82.042) (xy 208.788 79.502))
+    (stroke (width 0) (type default))
+    (uuid 196eb18c-2622-4489-a383-09e61bee6965)
+  )
   (wire (pts (xy 196.342 69.342) (xy 204.47 69.342))
     (stroke (width 0) (type default))
     (uuid 2171501c-99c9-4b8c-8510-0b7903e99b19)
@@ -621,7 +628,7 @@
     (stroke (width 0) (type default))
     (uuid 30838da0-86ed-4f49-a38f-49ce16be4ca3)
   )
-  (wire (pts (xy 196.342 89.662) (xy 210.566 89.662))
+  (wire (pts (xy 196.342 89.662) (xy 208.788 89.662))
     (stroke (width 0) (type default))
     (uuid 30a22f0d-85ad-490b-929f-e71a231c1774)
   )
@@ -876,6 +883,10 @@
   (wire (pts (xy 125.73 41.656) (xy 125.73 45.212))
     (stroke (width 0) (type default))
     (uuid f71fcf08-ace1-4fce-97d6-0afb29e39e81)
+  )
+  (wire (pts (xy 208.788 89.662) (xy 210.566 89.662))
+    (stroke (width 0) (type default))
+    (uuid fa2f4bf5-87ba-45e5-bab3-10499e8cd15c)
   )
 
   (rectangle (start 53.848 143.256) (end 85.344 170.18)
@@ -1146,6 +1157,42 @@
       (project "RadioModule"
         (path "/0d0e4888-cfb8-427f-88cf-46e56f13629b"
           (reference "C4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 208.788 85.852 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 13533136-9632-4666-bec0-8e16370baad4)
+    (property "Reference" "C8" (at 214.376 85.852 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "100nF" (at 215.138 83.312 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 207.8228 82.042 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 208.788 85.852 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 149e0974-c023-45c0-8584-8605c498f709))
+    (pin "2" (uuid e7878956-5838-46bb-af89-a4fcaf0c51bc))
+    (instances
+      (project "RadioModule"
+        (path "/0d0e4888-cfb8-427f-88cf-46e56f13629b"
+          (reference "C8") (unit 1)
+        )
+      )
+      (project "Radio Board"
+        (path "/96645608-7ae7-41a0-a771-05df995caccb/85d7d8f7-7be3-46a3-a33d-de1e25797b47"
+          (reference "C20") (unit 1)
+        )
+      )
+      (project "Radio Module"
+        (path "/e0aafefc-63ce-4fcc-91f2-fb3da4e79e9e"
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -1467,6 +1514,31 @@
       (project "RadioModule"
         (path "/0d0e4888-cfb8-427f-88cf-46e56f13629b"
           (reference "J12") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 208.788 79.502 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 48be3694-2f11-49e4-87ad-4a680f0cfa87)
+    (property "Reference" "#PWR012" (at 208.788 73.152 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 208.788 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 208.788 79.502 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 208.788 79.502 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 10c0832d-3c2c-4ee6-9ea1-f35409d2114f))
+    (instances
+      (project "RadioModule"
+        (path "/0d0e4888-cfb8-427f-88cf-46e56f13629b"
+          (reference "#PWR012") (unit 1)
         )
       )
     )
