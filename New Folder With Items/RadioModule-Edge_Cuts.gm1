@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.8*%
+%TF.CreationDate,2024-01-16T20:57:43+00:00*%
+%TF.ProjectId,RadioModule,52616469-6f4d-46f6-9475-6c652e6b6963,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.8) date 2024-01-16 20:57:43*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X90000000Y-70000000D02*
+X105990000Y-70000000D01*
+X105990000Y-86010000D01*
+X90000000Y-86010000D01*
+X90000000Y-70000000D01*
+M02*
